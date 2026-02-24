@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>PhishGuard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:,">
+</head>
+<body>
+
+<div class="container">
+    <h1>🔐 PhishGuard</h1>
+    <p class="subtitle">Detector Inteligente de Phishing</p>
+
+    <textarea id="emailInput" placeholder="Cole aqui o email para análise..."></textarea>
+
+    <button id="analisarBtn">Analisar Email</button>
+
+    <div class="result-card">
+        <div id="scoreText">📄 Insira um email acima para análise</div>
+        <div class="progress-bar">
+            <div id="progress"></div>
+        </div>
+        <div id="motivos"></div>
+    </div>
+
+    <div class="history-card">
+        <h2>🕘 Histórico de Análises</h2>
+        <ul id="historyList"></ul>
+    </div>
+
+    <div class="examples">
+        <h2>📧 Exemplos de Teste</h2>
+        <ul>
+            <li onclick="preencherExemplo('email1')">Banco Falso</li>
+            <li onclick="preencherExemplo('email2')">Entrega Falha</li>
+            <li onclick="preencherExemplo('email3')">Alerta de Segurança</li>
+        </ul>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
